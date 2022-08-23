@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.scss']
 })
-export class BodyComponent implements OnInit {
+export class BodyComponent {
 
-  constructor() { }
+  usuarios: string[] = [];
 
-  ngOnInit(): void {
+  constructor() { 
+    this.usuarios.push("Matheus dos Santos");
+    
   }
 
 }
